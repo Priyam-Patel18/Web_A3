@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "1afff49b-02b8-443e-ad7a-69320b5171cd",
+		"name": "Products Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36259258"
+	},
+	"item": [
+		{
+			"name": "Normal POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Iphone 16 Pro\",\n  \"image\": \"http://example.com/iphone16pro.jpg\",\n  \"pricing\": 1699.99,\n  \"shippingCost\": 20.00\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"description\": \"Updated Product Description\",\n  \"image\": \"http://example.com/updated-image.jpg\",\n  \"pricing\": 24.99,\n  \"shippingCost\": 6.00\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/products/1"
+			},
+			"response": []
+		}
+	]
+}
